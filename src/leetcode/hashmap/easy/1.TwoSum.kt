@@ -1,4 +1,4 @@
-package leetcode.easy
+package leetcode.hashmap.easy
 
 /**
  * https://leetcode.com/problems/two-sum/

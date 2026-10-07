@@ -1,4 +1,4 @@
-package leetcode.easy
+package leetcode.binarysearch.easy
 
 /**
  * https://leetcode.com/problems/binary-search/

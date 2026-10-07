@@ -1,4 +1,4 @@
-package leetcode.easy
+package leetcode.hashset.easy
 
 /**
  * https://leetcode.com/problems/contains-duplicate/

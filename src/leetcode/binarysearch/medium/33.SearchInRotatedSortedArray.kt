@@ -1,4 +1,4 @@
-package leetcode.medium
+package leetcode.binarysearch.medium
 
 /**
  * https://leetcode.com/problems/search-in-rotated-sorted-array/

@@ -1,4 +1,4 @@
-package leetcode.easy
+package leetcode.onepass.easy
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/

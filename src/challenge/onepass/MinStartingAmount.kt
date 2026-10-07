@@ -1,4 +1,4 @@
-package challenge
+package challenge.onepass
 
 /**
  * To find the minimum starting amount.

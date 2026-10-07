@@ -1,4 +1,6 @@
-package leetcode.easy
+package leetcode.hashmap.easy
+
+import kotlin.text.iterator
 
 /**
  * https://leetcode.com/problems/valid-anagram/description/

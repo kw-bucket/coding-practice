@@ -1,6 +1,7 @@
-package leetcode.easy
+package leetcode.stack.easy
 
 import java.util.Stack
+import kotlin.text.iterator
 
 /**
  * https://leetcode.com/problems/valid-parentheses/

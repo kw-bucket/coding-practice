@@ -1,4 +1,6 @@
-package leetcode.medium
+package leetcode.hashmap.medium
+
+import kotlin.text.iterator
 
 /**
  * https://leetcode.com/problems/group-anagrams/

@@ -1,23 +1,7 @@
-package leetcode.easy
+package leetcode.linkedlist.easy
 
-private class ListNode(var `val`: Int) {
-    var next: ListNode? = null
+import leetcode.linkedlist.ListNode
 
-    override fun toString(): String {
-        val result = StringBuilder()
-        var current: ListNode? = this
-
-        while (current != null) {
-            result.append(current.`val`)
-            if (current.next != null) {
-                result.append(" -> ")
-            }
-            current = current.next
-        }
-
-        return result.toString()
-    }
-}
 
 /**
  * https://leetcode.com/problems/merge-two-sorted-lists/
@@ -36,7 +20,7 @@ fun main() {
 
     println(
         """
-            Input:
+            Input:-
                 List1: $list1
                 List2: $list2
         """.trimIndent()

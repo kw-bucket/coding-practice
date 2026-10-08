@@ -7,24 +7,25 @@ import kotlin.text.iterator
  * https://leetcode.com/problems/valid-parentheses/
  */
 fun main() {
-    val output = isValid("({[({[]})")
+    val output = isValid("()()()()()")
 
     println("Valid Parentheses: $output")
 }
 
 private fun isValid(s: String): Boolean {
+    // Use mapOf because we don't need to add/remove/update items.
     val bracketsMap = mapOf(
         ')' to '(',
         '}' to '{',
         ']' to '[',
     )
-    val stack = Stack<Char>()
+    val stack = Stack<Char>() /* ArrayDeque<Char>() */
 
     for (char in s) {
         // If it's an opening bracket
         if (bracketsMap.containsValue(char)) {
             // Push into stack
-            stack.push(char)
+            stack.push(char) /* stack.addFirst(char) */
         }
         // If it's a closing bracket
         else if (bracketsMap.containsKey(char)) {
@@ -32,6 +33,11 @@ private fun isValid(s: String): Boolean {
             if (stack.isEmpty() || stack.pop() != bracketsMap.getValue(char)) {
                 return false
             }
+            /*
+            if (stack.isEmpty() || stack.removeFirst() != bracketsMap.getValue(char)) {
+                return false
+            }
+             */
         }
     }
 

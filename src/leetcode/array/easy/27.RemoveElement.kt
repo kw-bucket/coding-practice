@@ -15,11 +15,9 @@ package leetcode.array.easy
 private fun main() {
     val nums = intArrayOf(3, 2, 2, 3)
     val `val` = 3
-
     println("Input: ${nums.contentToString()}, val = $`val`")
 
     val output = removeElement(nums, `val`)
-
     println("Output: $output, nums = ${nums.take(output)}")
 }
 

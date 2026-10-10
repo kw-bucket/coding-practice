@@ -1,8 +1,5 @@
 package leetcode.stack.easy
 
-import java.util.Stack
-import kotlin.text.iterator
-
 /**
  * https://leetcode.com/problems/valid-parentheses/
  */
@@ -19,25 +16,19 @@ private fun isValid(s: String): Boolean {
         '}' to '{',
         ']' to '[',
     )
-    val stack = Stack<Char>() /* ArrayDeque<Char>() */
+    val stack = ArrayDeque<Char>()
 
     for (char in s) {
-        // If it's an opening bracket
+        // If it's an opening bracket.
         if (bracketsMap.containsValue(char)) {
-            // Push into stack
-            stack.push(char) /* stack.addFirst(char) */
-        }
-        // If it's a closing bracket
-        else if (bracketsMap.containsKey(char)) {
-            // Check stack is not empty and this bracket match the expected opening bracket
-            if (stack.isEmpty() || stack.pop() != bracketsMap.getValue(char)) {
-                return false
-            }
-            /*
+            // Push into stack.
+            stack.addFirst(char)
+        } else if (bracketsMap.containsKey(char)) {
+            // If it's a closing bracket.
+            // Check stack is not empty and this bracket match the expected opening bracket.
             if (stack.isEmpty() || stack.removeFirst() != bracketsMap.getValue(char)) {
                 return false
             }
-             */
         }
     }
 

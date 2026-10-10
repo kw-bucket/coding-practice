@@ -53,13 +53,13 @@ private fun isPalindromeByMath(x: Int): Boolean {
 
 private fun isPalindromeByString(x: Int): Boolean {
     val numString = x.toString()
-    var reversed = StringBuilder()
-
-    for (i in numString.length - 1 downTo 0) {
-        reversed.append(numString[i])
+    val reversed = buildString {
+        for (i in numString.length - 1 downTo 0) {
+            append(numString[i])
+        }
     }
 
-    return reversed.toString() == numString
+    return reversed == numString
 
     /*
         Time complexity is O(n)

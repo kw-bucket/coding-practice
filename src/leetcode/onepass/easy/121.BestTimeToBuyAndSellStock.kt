@@ -58,10 +58,9 @@ private fun maxProfitOptimized(prices: IntArray): Int {
         if (price < lowestPrice) {
             // Update the lowest price
             lowestPrice = price
-        }
-        // If not, and current profit is higher
-        else if (price - lowestPrice > maxProfit) {
-            // Update the maximum profit
+        } else if (price - lowestPrice > maxProfit) {
+            // If not, and current profit is higher.
+            // Update the maximum profit.
             maxProfit = price - lowestPrice
         }
     }

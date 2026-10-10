@@ -3,10 +3,10 @@ package leetcode.hashmap.easy
 import kotlin.text.iterator
 
 /**
- * https://leetcode.com/problems/valid-anagram/description/
+ * https://leetcode.com/problems/valid-anagram/
  */
 
-fun main() {
+private fun main() {
     val s = "anagram"
     val t = "ranagam"
 

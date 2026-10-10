@@ -26,6 +26,7 @@ private fun reverse(x: Int): Int {
     if (reversedNumber > Int.MAX_VALUE || reversedNumber < Int.MIN_VALUE) {
         return 0
     }
+
     return reversedNumber.toInt()
 
     /*

@@ -14,7 +14,7 @@ import leetcode.linkedlist.ListNode
  * 1 → 1 → 2 → 3 → 4 → 4
  *
  */
-fun main() {
+private fun main() {
     val list1 = ListNode(1).apply { next = ListNode(2).apply { next = ListNode(4) } }
     val list2 = ListNode(1).apply { next = ListNode(3).apply { next = ListNode(4) } }
 
@@ -38,7 +38,7 @@ private fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
     // `tail` point to the same node as `dummy`.
     var tail = dummy
 
-    // Create mutable references to the current nodes in l1 and l2.
+    // Create mutable references to the current nodes in list1 and list2.
     var current1 = list1
     var current2 = list2
     // Compare the two lists while both current nodes are not null.
